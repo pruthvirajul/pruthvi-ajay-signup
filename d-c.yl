@@ -36,7 +36,7 @@ services:
       - DB_HOST=postgres
       - DB_USER=postgres
       - DB_NAME=auth_db
-      - DB_PASSWORD=admin123
+      - DB_PASSWORD=admin321
       - DB_PORT=5432
       - FRONTEND_URL=http://forgot:80
     volumes:
@@ -53,7 +53,7 @@ services:
       - "5434:5432"
     environment:
       - POSTGRES_USER=postgres
-      - POSTGRES_PASSWORD=admin123
+      - POSTGRES_PASSWORD=admin321
       - POSTGRES_DB=auth_db
     volumes:
       - postgres_data:/var/lib/postgresql/data

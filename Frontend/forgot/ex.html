@@ -696,7 +696,7 @@
             }
 
             try {
-                const response = await fetch('http://localhost:3000/check-email-data', {
+                const response = await fetch('http://13.60.190.178:3000/check-email-data', {
                     method: 'POST',
                     headers: { 'Content-Type': 'application/json' },
                     body: JSON.stringify({ email })
@@ -812,7 +812,7 @@
             const confirmNewPassword = document.getElementById('confirmNewPassword').value;
             
             try {
-                const response = await fetch('http://localhost:3000/reset-password-data', {
+                const response = await fetch('http://13.60.190.178:3000/reset-password-data', {
                     method: 'POST',
                     headers: { 'Content-Type': 'application/json' },
                     body: JSON.stringify({ email, newPassword, confirmNewPassword })

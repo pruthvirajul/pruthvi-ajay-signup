@@ -23,17 +23,17 @@ console.log('Database Configuration:', {
   DB_USER: process.env.DB_USER,
   DB_HOST: process.env.DB_HOST,
   DB_NAME: process.env.DB_NAME,
-  DB_PASSWORD: 'admin123', // Masked for security in logs
+  DB_PASSWORD: 'admin321', // Masked for security in logs
   DB_PORT: process.env.DB_PORT,
   FRONTEND_URL: process.env.FRONTEND_URL
 });
 
 // CORS configuration
 const allowedOrigins = [
-  'http://54.166.206.245:8005',
-  'http://54.166.206.245:8006',
-  'http://54.166.206.245:8007',
-  process.env.FRONTEND_URL || 'http://54.166.206.245:8005'
+  'http://13.60.190.178:8005',
+  'http://13.60.190.178:8006',
+  'http://13.60.190.178:8007',
+  process.env.FRONTEND_URL || 'http://13.60.190.178:8005'
 ];
 
 app.use(cors({

@@ -813,7 +813,7 @@ async function validateEmail() {
             errorElement.style.color = '#0077ff';
             errorElement.style.fontWeight = 'normal';
             
-            const response = await fetch('http://localhost:3000/check-email-data', {
+            const response = await fetch('http://13.60.190.178:3000/check-email-data', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({ email })
@@ -971,7 +971,7 @@ async function validateEmail() {
                 signupButton.disabled = true;
                 signupButton.textContent = 'Signing Up...';
                 
-                const response = await fetch('http://localhost:3000/signup-data', {
+                const response = await fetch('http://13.60.190.178:3000/signup-data', {
                     method: 'POST',
                     body: formData
                 });

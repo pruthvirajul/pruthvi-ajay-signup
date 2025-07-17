@@ -7,7 +7,7 @@ set -e
 host="${DB_HOST:-postgres}"
 port="${DB_PORT:-5432}"
 user="${DB_USER:-postgres}"
-password="${DB_PASSWORD:-admin123}"
+password="${DB_PASSWORD:-admin321}"
 
 # Wait until PostgreSQL is ready
 until PGPASSWORD="$password" psql -h "$host" -p "$port" -U "$user" -d postgres -c '\q' 2>/dev/null; do
